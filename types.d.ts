@@ -17,7 +17,7 @@ declare module 'api-query-params' {
     population: PopulateOptions[];
   };
 
-  function aqp(
+  export function aqp(
     query: string | Query,
     opt?: {
       skipKey?: string;
@@ -34,6 +34,4 @@ declare module 'api-query-params' {
       casters?: unknown;
     }
   ): AqpQuery;
-
-  export default aqp;
 }
